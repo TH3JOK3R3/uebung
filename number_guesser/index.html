@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number_guesser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: "Inter", serif; font-optical-sizing: auto; font-style: normal; }
+        h1 { text-align: center; }
+        .fat-li { font-weight: 600; }
+        .button { position: relative; text-align: center; font-weight: 500; margin: 30px; }
+    </style>
+</head>
+<body>
+    <h1 id="header">Number-Guesser</h1>
+    <div id="content">
+        <h2>Anleitung</h2>
+        <ol>
+            <li>Drücke auf den Button "<span class="fat-li">Zahlenraum wählen</span>"</li>
+            <li>Suche dir einen Zahlenraum aus in dem du eine Zahl raten möchtest und gib diesen in den Feldern von und bis ein.</li>
+            <li>Drücke nun auf den Button "<span class="fat-li">Starten</span>".</li>
+            <li>Suche nun eine Zahl in dem Zahlenbereich den du gewählt hast aus die du raten möchtest. </li>
+            <li>Der Computer sagt dir nun ob deine Zahl zu klein, zu groß oder richtig war.<br>
+                Wenn die Zahl rot ist heißt das das deine geratene Zahl zu groß war.<br>
+                Wenn sie gelb ist hast du zu niedrig geraten und wenn deine Zahl grün ist<br>
+                lagst du richtig</li>
+                <li>Wenn du aufhören möchtest drückst du einfach auf den Button "<span class="fat-li">Beenden</span>".</li>
+        </ol>
+        <div class="button">
+            <a href="zahlenbereich-wählen.html"><button onclick="renderNumberInitialize()">Zahlenraum wählen</button></a>
+        </div>
+    </div>
+</body>
+</html>

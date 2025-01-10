@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: "Inter", serif; font-optical-sizing: auto; font-style: normal; }
+        h1 { text-align: center; }
+        .button-layout {
+            margin-left: 30px; 
+            padding: 0; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            position: absolute; 
+            top: 100px; 
+        }
+        .layout-right {
+            margin-left: 70%;
+            margin-top: 100px;
+        }
+    </style>
+    
+    <script type="text/javascript" src="code.js" defer></script>
+</head>
+<body>
+    <h1>Start</h1>
+        <div class="button-layout">
+            <button onclick="rate()" style="margin-top: 100px;">Raten</button><br>
+            <a href="index.html"><button style="margin-top: 20px;">Beenden</button></a>
+        </div>
+        <div class="layout-right">  
+            <h2>Welche Zahl aus deinem Bereich rätst du?</h2><br>
+            <label for="guess">Zahl:</label>
+            <input type="number" id="guess" name="guess" step="1">
+        </div>
+</body>
+</html>
